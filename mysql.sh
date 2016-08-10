@@ -1,0 +1,1 @@
+mysql -u thiagoscalone -p
