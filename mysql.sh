@@ -1,1 +1,1 @@
-mysql -u thiagoscalone -p
+mysql -u root -p

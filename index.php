@@ -1,21 +1,15 @@
-<?php
-if (false)
-	echo "AASDASDAS";
-else
-	echo 'FHFHFHHFH';
-?>
+<?php //namespace FatecFranca\ADS8N;
 
-<?php
-//$servername = "localhost";
-$servername = "localhost:/tmp/mysql.sock";
-$username = "root";
-$password = "";
-$dbname = "news";
+//use \FatecFranca\ADS8;
 
-$link = mysql_connect($servername, $username, $password);
-if (!$link) {
-	die('Não foi possível conectar: ' . mysql_error());
-}
-echo 'Conexão bem sucedida';
-mysql_close($link);
+//echo "Criada página padrão do projeto";
+
+// Exibe todos os erros
+error_reporting(E_ALL);
+
+require_once('./classes/Application.php');
+
+// Iniciando a aplicação
+$app = new Application('development');
+$app->run();
 ?>
